@@ -26,3 +26,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
+
+Any new push to the main branch triggers a new action workflow
