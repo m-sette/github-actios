@@ -9,5 +9,7 @@ jobs:
             - uses: actions/setup-node@v3
               with:
                   node-version: '18'
+            - run: git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            - run: git config --global user.name "github-actions"
             - run: npm i
             - run: npm run deploy
