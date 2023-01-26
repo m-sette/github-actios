@@ -1,0 +1,8 @@
+name: GitHub Actions Deploy
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+    Deploy-GitHub-Actions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: npm run deploy
